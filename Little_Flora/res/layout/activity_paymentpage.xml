@@ -1,0 +1,50 @@
+
+<!-- A DrawerLayout is intended to be used as the top-level content view using match_parent for both width and height to consume the full space available. -->
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="10dp" >
+
+                
+                <Button
+                    android:id="@+id/btn_payment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginRight="35dp"
+                    android:layout_marginTop="18dp"
+                    android:background="@drawable/background_pinkbutton"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="payment page"
+                    android:textColor="@color/selector_fortextview_white"
+                    android:textSize="18sp" />
+                
+			</LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+
+    <ListView
+        android:id="@+id/left_drawer"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/littleFlora_pink"
+        android:choiceMode="singleChoice"
+        android:divider="@color/Gray"
+        android:dividerHeight="1px" />
+
+</android.support.v4.widget.DrawerLayout>

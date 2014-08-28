@@ -1,0 +1,278 @@
+
+<!-- A DrawerLayout is intended to be used as the top-level content view using match_parent for both width and height to consume the full space available. -->
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/White"
+            android:orientation="vertical"
+            android:weightSum="1" >
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:id="@+id/lin_userProfile"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingTop="10dp"
+                            android:weightSum="1" >
+
+                            <TextView
+                                android:id="@+id/txt_useremail"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".4"
+                                android:gravity="center_vertical|center_horizontal"
+                                android:padding="10dp"
+                                android:text="@string/Profile_email" />
+
+                            <TextView
+                                android:id="@+id/txt_useremail_field"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".6"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp"
+                                android:text="@string/Profile_email" />
+
+                            <EditText
+                                android:id="@+id/edt_useremail_field"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".6"
+                                android:gravity="center_vertical"
+						        android:clickable="false" 
+						        android:cursorVisible="false" 
+						        android:focusable="false" 
+						        android:focusableInTouchMode="false"                                
+                                android:background="@drawable/background_edittext"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp"
+                                android:hint="@string/Profile_email"
+                                android:textColor="@color/littleFlora_pink"
+                                android:visibility="gone" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingTop="10dp"
+                            android:weightSum="1" >
+
+                            <TextView
+                                android:id="@+id/txt_userfirstname"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".4"
+                                android:gravity="center_vertical|center_horizontal"
+                                android:padding="10dp"
+                                android:text="@string/Profile_firstName" />
+
+                            <TextView
+                                android:id="@+id/txt_userfirstname_field"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".6"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp"
+                                android:text="@string/Profile_firstName" />
+
+                            <EditText
+                                android:id="@+id/edt_userfirstname_field"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".6"
+                                android:background="@drawable/background_edittext"
+                                android:hint="@string/Profile_firstName"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp"
+                                android:textColor="@color/littleFlora_pink"
+                                android:visibility="gone" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingTop="10dp"
+                            android:weightSum="1" >
+
+                            <TextView
+                                android:id="@+id/txt_userlastname"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".4"
+                                android:gravity="center_vertical|center_horizontal"
+                                android:padding="10dp"
+                                android:text="@string/Profile_lastName" />
+
+                            <TextView
+                                android:id="@+id/txt_userlastname_field"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".6"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp"
+                                android:text="@string/Profile_lastName" />
+
+                            <EditText
+                                android:id="@+id/edt_userlastname_field"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".6"
+                                android:background="@drawable/background_edittext"
+                                android:gravity="center_vertical"
+                                android:hint="@string/Profile_lastName"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp"
+                                android:textColor="@color/littleFlora_pink"
+                                android:visibility="gone" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingTop="10dp"
+                            android:weightSum="1" >
+
+                            <CheckBox
+                                android:layout_weight=".5"
+                                android:textSize="12sp"
+                                android:id="@+id/chk_updateProfile"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="18dp"
+                                android:text="@string/Profile_updateProfile" />
+
+                            <CheckBox
+                                android:textSize="12sp"
+                                android:layout_weight=".5"
+                                android:id="@+id/chk_password"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="18dp"
+                                android:text="@string/Profile_updatePassword" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/lay_assword"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingTop="10dp"
+                            android:visibility="gone"
+                            android:weightSum="1" >
+
+                            <TextView
+                                android:id="@+id/txt_userpassword"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".4"
+                                android:gravity="center_vertical|center_horizontal"
+                                android:padding="10dp"
+                                android:text="@string/Profile_password" />
+
+                            <EditText
+                                android:id="@+id/edt_userpassword_field"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".6"
+                                android:background="@drawable/background_edittext"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp"
+                                android:hint="@string/Profile_password"
+                                android:textColor="@color/littleFlora_pink" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/lay_confPassword"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingTop="10dp"
+                            android:visibility="gone"
+                            android:weightSum="1" >
+
+                            <TextView
+                                android:id="@+id/txt_userconfpassword"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".4"
+                                android:gravity="center_vertical|center_horizontal"
+                                android:padding="10dp"
+                                android:text="@string/Profile_confPassword" />
+
+                            <EditText
+                                android:id="@+id/edt_userConfpassword_field"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".6"
+                                android:background="@drawable/background_edittext"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp"
+                                android:hint="@string/Profile_confPassword"
+                                android:textColor="@color/littleFlora_pink" />
+                        </LinearLayout>
+
+                        <Button
+                            android:id="@+id/btn_updateProfile"
+                            android:layout_width="match_parent"
+                            android:layout_height="36dp"
+                            android:layout_marginLeft="40dp"
+                            android:layout_marginRight="40dp"
+                            android:layout_marginTop="18dp"
+                            android:visibility="gone"
+                            android:background="@drawable/background_pinkbutton"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:text="@string/Profile_update"
+                            android:textColor="@color/selector_fortextview_white"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </FrameLayout>
+
+    <ListView
+        android:id="@+id/left_drawer"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/littleFlora_pink"
+        android:choiceMode="singleChoice"
+        android:divider="@color/Gray"
+        android:dividerHeight="1px" />
+
+</android.support.v4.widget.DrawerLayout>

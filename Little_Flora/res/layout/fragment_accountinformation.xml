@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1" >
+
+        <EditText
+            android:id="@+id/edt_firstName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight=".5"
+            android:background="@drawable/background_edittext"
+            android:hint="@string/Fragment_AccInfo_firstName"
+            android:minHeight="50dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/edt_lastName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight=".5"
+            android:background="@drawable/background_edittext"
+            android:hint="@string/Fragment_AccInfo_lastName"
+            android:minHeight="50dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edt_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/background_edittext"
+        android:hint="@string/Fragment_AccInfo_email"
+        android:inputType="textEmailAddress"
+        android:minHeight="50dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:singleLine="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:orientation="horizontal"
+        android:weightSum="1" >
+
+        <EditText
+            android:id="@+id/edt_MM"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight=".2"
+            android:background="@drawable/background_edittext"
+            android:hint="@string/Fragment_AccInfo_MM"
+            android:minHeight="50dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/edt_DD"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight=".2"
+            android:background="@drawable/background_edittext"
+            android:hint="@string/Fragment_AccInfo_DD"
+            android:minHeight="50dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/edt_YYYY"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".6"
+            android:background="@drawable/background_edittext"
+            android:hint="@string/Fragment_AccInfo_YYYY"
+            android:minHeight="50dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:orientation="horizontal"
+        android:weightSum="1" >
+
+        <TextView
+            android:id="@+id/txt_MM"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight=".2"
+            android:text="@string/Fragment_AccInfo_MM" />
+
+        <TextView
+            android:id="@+id/txt_DD"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight=".2"
+            android:text="@string/Fragment_AccInfo_DD" />
+
+        <TextView
+            android:id="@+id/txt_YYYY"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".6"
+            android:text="@string/Fragment_AccInfo_YYYY" />
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/radioSex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/radioMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/Fragment_AccInfo_male" />
+
+        <RadioButton
+            android:id="@+id/radioFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="@string/Fragment_AccInfo_female" />
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/chk_changePassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:hint="@string/Fragment_AccInfo_changePassword" />
+
+    <LinearLayout
+        android:id="@+id/lay_passwordLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="invisible" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+
+            <EditText
+                android:id="@+id/edt_changePassword"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_weight=".5"
+                android:background="@drawable/background_edittext"
+                android:hint="@string/Fragment_AccInfo_currentPassword"
+                android:inputType="textPassword"
+                android:minHeight="50dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:singleLine="true" />
+
+            <ImageView
+                android:id="@+id/img_correct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:gravity="left"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:singleLine="true"
+                android:src="@drawable/correct"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_addNewPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:orientation="horizontal"
+            android:visibility="invisible"
+            android:weightSum="1" >
+
+            <EditText
+                android:id="@+id/edt_newPassword"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_weight=".5"
+                android:background="@drawable/background_edittext"
+                android:hint="@string/Fragment_AccInfo_newPassword"
+                android:inputType="textPassword"
+                android:minHeight="50dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:singleLine="true" />
+
+            <EditText
+                android:id="@+id/edt_confNewPassword"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight=".5"
+                android:background="@drawable/background_edittext"
+                android:hint="@string/Fragment_AccInfo_confNewPassword"
+                android:inputType="textPassword"
+                android:minHeight="50dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:singleLine="true" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/background_pinkbutton"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="Save"
+        android:textColor="@color/selector_fortextview_white" />
+
+</LinearLayout>

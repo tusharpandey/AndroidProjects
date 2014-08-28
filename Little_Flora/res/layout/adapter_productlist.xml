@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/littleFlora_appBackground"
+    android:orientation="horizontal"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp"
+    >
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight=".5" >
+
+        <ImageView
+            android:id="@+id/img_maincategoryimage1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/placeholder"
+            android:scaleType="fitXY" />
+    </FrameLayout>
+	<View
+	    android:layout_width="2px"
+	    android:layout_height="match_parent"
+	    />
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight=".5" >
+
+        <ImageView
+            android:id="@+id/img_maincategoryimage2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/placeholder"
+            android:scaleType="fitXY" />
+    </FrameLayout>
+
+</LinearLayout>

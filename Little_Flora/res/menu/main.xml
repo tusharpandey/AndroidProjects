@@ -1,0 +1,85 @@
+<!--
+  Copyright 2013 The Android Open Source Project
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/action_call"
+        android:icon="@drawable/device_access_call"
+        android:orderInCategory="3"
+        android:showAsAction="ifRoom"
+        android:title="@string/Overflow_call_en"/>
+    <item
+        android:id="@+id/action_whatsapp"
+        android:icon="@drawable/whatsapp_128"
+        android:orderInCategory="2"
+        android:showAsAction="ifRoom"
+        android:title="@string/Overflow_whatsApp_en"/>
+    <item
+        android:id="@+id/action_search"
+        android:actionViewClass="android.widget.SearchView"
+        android:icon="@drawable/action_search"
+        android:orderInCategory="4"
+        android:showAsAction="collapseActionView|always"
+        android:title="@string/Overflow_Search_en"/>
+    <item
+        android:id="@+id/action_carticon"
+        android:icon="@drawable/shopping_cart"
+        android:orderInCategory="1"
+        android:showAsAction="ifRoom"
+        android:title="@string/Overflow_Cart_en"/>
+    <item
+        android:id="@+id/action_account"
+        android:icon="@drawable/menu_account"
+        android:showAsAction="never"
+        android:title="@string/Overflow_myaccount_en"/>
+    <item
+        android:id="@+id/action_wishlist"
+        android:icon="@drawable/menu_wishlist"
+        android:showAsAction="never"
+        android:title="@string/Overflow_WishList_en"/>
+    <item
+        android:id="@+id/action_order"
+        android:icon="@drawable/menu_order_status"
+        android:showAsAction="never"
+        android:title="@string/Overflow_Order_en"/>
+    <item
+        android:id="@+id/action_share"
+        android:icon="@drawable/menu_share"
+        android:showAsAction="never"
+        android:title="@string/Overflow_Share_en"/>
+    <item
+        android:id="@+id/action_newsletter"
+        android:icon="@drawable/menu_newsletter"
+        android:showAsAction="never"
+        android:title="@string/Overflow_NewsLetter_en"/>
+    <item
+        android:id="@+id/action_contactus"
+        android:icon="@drawable/menu_contacts"
+        android:showAsAction="never"
+        android:title="@string/Overflow_ContactUs_en"/>
+    <item
+        android:id="@+id/action_followus"
+        android:icon="@drawable/menu_followus"
+        android:showAsAction="never"
+        android:title="@string/Overflow_Followus_en"/>
+    <item
+        android:id="@+id/action_policies"
+        android:icon="@drawable/menu_policies"
+        android:showAsAction="never"
+        android:title="@string/Overflow_Policies_en"/>
+
+</menu>

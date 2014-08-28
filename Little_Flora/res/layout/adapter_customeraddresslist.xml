@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+<!--     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:weightSum="1" >
+
+        <TextView
+            android:id="@+id/txt_email"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".3"
+            
+            android:text="@string/CustomerAddressList_customerEmail"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/txt_email_field"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".7"
+            
+            android:text="@string/CustomerAddressList_customerEmail"
+            android:textSize="18sp" />
+    </LinearLayout> -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:weightSum="1" >
+
+        <TextView
+            android:id="@+id/txt_firstname"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".3"
+            
+            android:text="@string/CustomerAddressList_customerFirstName"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/txt_firstname_field"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".7"
+            
+            android:text="@string/CustomerAddressList_customerFirstName"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:weightSum="1" >
+
+        <TextView
+            android:id="@+id/txt_lastname"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".3"
+            
+            android:text="@string/CustomerAddressList_customerLastName"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/txt_lastname_field"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".7"
+            
+            android:text="@string/CustomerAddressList_customerLastName"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:weightSum="1" >
+
+        <TextView
+            android:id="@+id/txt_street1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".3"
+            
+            android:text="@string/CustomerAddressList_customerStreet1"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/txt_street1_field"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".7"
+            
+            android:text="@string/CustomerAddressList_customerStreet1"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+<!--     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:weightSum="1" >
+
+        <TextView
+            android:id="@+id/txt_street2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".3"
+            
+            android:text="@string/CustomerAddressList_customerStreet2"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/txt_street2_field"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".7"
+            
+            android:text="@string/CustomerAddressList_customerStreet2"
+            android:textSize="18sp" />
+    </LinearLayout> -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:weightSum="1" >
+
+        <TextView
+            android:id="@+id/txt_city"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".3"
+            
+            android:text="@string/CustomerAddressList_customerCity"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/txt_city_field"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".7"
+            
+            android:text="@string/CustomerAddressList_customerCity"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:weightSum="1" >
+
+        <TextView
+            android:id="@+id/txt_postcode"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".3"
+            
+            android:text="@string/CustomerAddressList_customerPostCode"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/txt_postcode_field"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".7"
+            
+            android:text="@string/CustomerAddressList_customerPostCode"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:weightSum="1" >
+
+        <TextView
+            android:id="@+id/txt_telephone"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".3"
+            
+            android:text="@string/CustomerAddressList_customerTelephone"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/txt_telephone_field"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".7"
+            
+            android:text="@string/CustomerAddressList_customerTelephone"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>

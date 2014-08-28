@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="top|bottom|left|right"
+    android:layout_marginLeft="18dp"
+    android:layout_marginRight="18dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:orientation="horizontal"
+    android:weightSum="1" >
+
+    <ImageView
+        android:id="@+id/img_addtoCart"
+        android:layout_width="0dp"
+        android:minWidth="80dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight=".33"
+        android:src="@drawable/selector_for_addtocart" />
+
+    <FrameLayout
+        android:minWidth="80dp"
+        android:layout_weight=".33"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" >
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:background="@color/Gray" />
+    </FrameLayout>
+
+    <ImageView
+        android:minWidth="80dp"
+        android:id="@+id/img_share"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight=".33"
+        android:src="@drawable/selector_for_share" />
+
+</LinearLayout>

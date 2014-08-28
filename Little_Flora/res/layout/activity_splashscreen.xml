@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/splashscreen_new"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        android:weightSum="1" >
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:paddingRight="8dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".5" >
+
+            <TextView
+                android:id="@+id/txt_English"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|right"
+                android:layout_gravity="center_vertical"
+                android:text="@string/splashScreen_English"
+                android:textColor="@color/selector_fortextview_pink"
+                android:textSize="20sp" />
+        </FrameLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="30dp"
+            android:background="@color/littleFlora_pink" />
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:paddingLeft="8dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".5"
+            >
+
+            <TextView
+                android:id="@+id/txt_Arabic"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|left"
+                android:layout_gravity="center_vertical"
+                android:text="@string/splashScreen_Arabic"
+                android:textColor="@color/selector_fortextview_pink"
+                android:textSize="20sp" />
+        </FrameLayout>
+    </LinearLayout>
+
+</FrameLayout>

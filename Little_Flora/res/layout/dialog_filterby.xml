@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="top|bottom|left|right"
+    android:layout_margin="18dp"
+    android:minWidth="250dp"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:singleLine="true"
+        android:text="Filter By Price aa Sas as as sad fsdf sdfds sdf  dsf fds fsdf dfsdfsdf fdfsfsdf"
+        android:textColor="@color/littleFlora_pink"
+        android:textSize="20sp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Filter By Price"
+        android:textColor="@color/littleFlora_pink"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="1" >
+
+        <EditText
+            android:id="@+id/edt_startLimit"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight=".4"
+            android:hint="start limit"
+            android:inputType="text|number" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight=".2" />
+
+        <EditText
+            android:id="@+id/edt_endLimit"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight=".4"
+            android:hint="end limit"
+            android:inputType="text|number" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_filter"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/background_pinkbutton"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="Filter"
+        android:textColor="@color/selector_fortextview_white"
+        android:textSize="18sp" />
+
+</LinearLayout>

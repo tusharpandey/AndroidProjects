@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <RadioGroup
+        android:id="@+id/radioSex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/rad_creditcard_bankpayment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:checked="true"
+            android:text="@string/PaymentInfo_CreditCard_bankPayment"
+            android:textColor="@color/littleFlora_pink" />
+
+        <RadioButton
+            android:id="@+id/rad_cashondeliver"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="@string/PaymentInfo_cashOnDelivery"
+            android:textColor="@color/littleFlora_pink" />
+
+        <RadioButton
+            android:id="@+id/rad_creditcardpayment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="@string/PaymentInfo_creditcardpayment"
+            android:textColor="@color/littleFlora_pink" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="18dp"
+        android:orientation="horizontal"
+        android:weightSum="1" >
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight=".2"
+            android:background="@drawable/background_pinkbutton"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="back"
+            android:textColor="@color/selector_fortextview_white"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="15dp"
+            android:layout_height="30dp" />
+
+        <Button
+            android:id="@+id/btn_addNewAddress"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight=".8"
+            android:background="@drawable/background_pinkbutton"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/PaymentInfo_submitpaymentinfo"
+            android:textColor="@color/selector_fortextview_white"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>

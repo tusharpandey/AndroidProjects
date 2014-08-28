@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--
+		old 
+    
+    <string name="LittleFloraPhoneNumber">08826390195</string>
+    <string name="LittleFloraWhatsAppNumber">918826390195</string>
+    -->
+
+    <string name="LittleFloraPhoneNumber">+966583991222</string>
+    <string name="LittleFloraWhatsAppNumber">966583991222</string>
+    <string name="facebookAppId">794241443930550</string>
+    <string name="app_name">little flora</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="networkNotPresent">Network not Present</string>
+    <string name="errorInResponse">Error in Response</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="cartIsBlank">Cart is Empty or User is not Logined</string>
+    
+    <string-array name="city">
+        <item>Gurgaon</item>
+        <item>Delhi</item>
+        <item>Noida</item>
+        <item>Ghaziabad</item>
+    </string-array>
+
+    <!-- Home -->
+    <string name="home_browseProducts">Browser Products</string>
+    <string name="home_cart">Cart</string>
+    <string name="home_checkout">Check Out</string>
+
+    <!-- Splash Screen -->
+    <string name="splashScreen_English">English</string>
+    <string name="splashScreen_Arabic">Arabic</string>
+
+    <!-- Main Category -->
+    <string name="mainCategory_Category">Categories</string>
+
+    <!-- Sub Category -->
+    <string name="subCategory_Category">Sub Categories</string>
+
+    <!-- Products -->
+    <string name="Products_products">Products</string>
+    <string name="Products_Sort">Sort</string>
+    <string name="Products_Filter">Filter</string>
+
+    <!-- Products Description -->
+    <string name="ProductsDescription_city">City</string>
+    <string name="ProductsDescription_deliveryDate">Delivery Date</string>
+    <string name="ProductsDescription_productDescription">Product Description</string>
+    <string name="ProductsDescription_addtoCart">Add to Cart</string>
+    <string name="ProductsDescription_share">Share</string>
+    <string name="ProductsDescription_email">Email</string>
+    <string name="ProductsDescription_buynow">Buy Now</string>
+    <string name="ProductsDescription_isInStock">Available in Stock</string>
+    <string name="ProductsDescription_outOfStock">Out ofStock</string>
+    <string name="ProductsDescription_Sharingwith">Share with</string>
+    <string name="ProductsDescription_SharingwithFacebook">Facebook</string>
+    <string name="ProductsDescription_SharingwithTwitter">Twitter</string>
+    <string name="ProductsDescription_SharingwithInstagram">Instagram</string>
+    <string name="ProductsDescription_SharingwithPintrest">Pintrest</string>
+
+    <!-- Login -->
+    <string name="Login_login">Login</string>
+    <string name="Login_logout">Logout</string>
+    <string name="Login_email_hint">Useremail</string>
+    <string name="Login_password_hint">Password</string>
+    <string name="Login_forgot_Password">forgot Password ?</string>
+    <string name="Login_newhere_registernow">New Here ? Register Now .</string>
+    <string name="Login_loginWithFacebook">Login with Facebook</string>
+    <string name="Login_loginWithTwitter">Login with Twitter</string>
+    <string name="Login_invalidEmail">Email is invalid</string>
+    <string name="Login_invalidPassword">Password length is less then 8</string>
+
+    <!-- LOADING at the time of : Fetching data from the Webservice , Calling webservice -->
+    <string name="loading_MainCategoryData">Loading Categories ... </string>
+    <string name="loading_isCanceled">Please wait for Fetching whole data</string>
+    <string name="loading_loging">Logging in ...</string>
+    <string name="loading_createAccount">Signing up ...</string>
+    <string name="loading_splashScreen">Please wait ... </string>
+    <string name="loading_profileData">Loading User Profile ... </string>
+    <string name="loading_updatingProfileData">Updating Profile ... </string>
+    <string name="loading_searchingResult">Searching Results ... </string>
+    <string name="loading_customerAddresslist">Loading Customer address list ...</string>
+    <string name="loading_submittingAddress">Submitting Address ...</string>
+    <string name="loading_addingIntoTheCart">Adding Product into the Cart ...</string>
+    <string name="loading_SigningupForTheNewsLetter">Signing up for the news letter...</string>
+    <string name="loading_cartDataoading">Loading User Cart Data ...</string>
+    <string name="loading_cartUpdate">Updating product Quantity in the cart...</string>
+    <string name="loading_cartdeleteProduct">Deleting product from the cart...</string>
+    <string name="loading_cartCustomerAdd">Please Wait .... </string>
+    <string name="loading_PaymentPageInProcess">Payment in Process .... </string>
+    
+    <!-- Search -->
+    <string name="Search_nothingToSearch">Nothing to Search</string>
+    <string name="Search_productsFound">Products found successfully</string>
+    <string name="Search_productsnotFound">No Products found</string>
+
+    <!-- Registration -->
+    <string name="Registration_useremail">Useremail</string>
+    <string name="Registration_phoneno">Mobile no</string>
+    
+    <string name="Registration_userFirstName">First Name</string>
+    <string name="Registration_userLastName">Last Name</string>
+    <string name="Registration_userPassword">Password</string>
+    <string name="Registration_userConfPassword">Confirm Password</string>
+    <string name="Registration_Registration">Registration</string>
+    <string name="Registration_Register">Register</string>
+    <string name="Registration_invalidEmail">Email is invalid</string>
+    <string name="Registration_invalidFirstName">First Name is invalid</string>
+    <string name="Registration_invalidLastName">Last Name is invalid</string>
+    <string name="Registration_invalidPassword">Password and confirm password doesnt match</string>
+    <string name="Registration_invalidPasswordLength">Password and confirm password length is less then 8</string>
+    <string name="Registration_invalidMobileNumber">Invalid Mobile number</string>
+    <string name="Registration_Dialog">Registration Dialog</string>
+    <string name="Registration_Message">Message</string>
+
+    <!-- Sort Dialog -->
+    <string name="SortDialog_sortBy">Sort By</string>
+    <string name="SortDialog_pricehightolow">Price - high to low</string>
+    <string name="SortDialog_pricelowtohigh">Price - low to high</string>
+    <string name="SortDialog_positionhightolow">Position - high to low</string>
+    <string name="SortDialog_positionlowtohigh">Position - low to high</string>
+    <string name="SortDialog_name">Name</string>
+    <string name="SortDialog_sku">SKU</string>
+
+    <!-- Loading Products -->
+    <string name="loading_Products">Loading Products</string>
+
+    <!-- Overflow menu icons text -->
+    <string name="Overflow_call_ar">دعوة</string>
+    <string name="Overflow_whatsApp_ar">ال WhatsApp</string>
+    <string name="Overflow_Search_ar">البحث</string>
+    <string name="Overflow_Cart_ar">العربة</string>
+    <string name="Overflow_Login_ar">تسجيل الدخول</string>
+    <string name="Overflow_WishList_ar">قائمة أمنيات</string>
+    <string name="Overflow_Order_ar">ترتيب</string>
+    <string name="Overflow_Share_ar">حصة</string>
+    <string name="Overflow_NewsLetter_ar">الرسالة الإخبارية</string>
+    <string name="Overflow_ContactUs_ar">الاتصال بنا</string>
+    <string name="Overflow_Followus_ar">تابعونا</string>
+    <string name="Overflow_Policies_ar">سياسات</string>
+    <string name="Overflow_myaccount_ar">حسابي</string>
+    
+    <string name="Overflow_call_en">Call</string>
+    <string name="Overflow_whatsApp_en">Whats app</string>
+    <string name="Overflow_Search_en">Search</string>
+    <string name="Overflow_Cart_en">Cart</string>
+    <string name="Overflow_Login_en">Login</string>
+    <string name="Overflow_WishList_en">Wish list</string>
+    <string name="Overflow_Order_en">Order</string>
+    <string name="Overflow_Share_en">Share</string>
+    <string name="Overflow_NewsLetter_en">News letter</string>
+    <string name="Overflow_ContactUs_en">Contact us</string>
+    <string name="Overflow_Followus_en">Follow us</string>
+    <string name="Overflow_Policies_en">Policies</string>
+    <string name="Overflow_myaccount_en">My Account</string>    
+
+    <!-- User Profile -->
+    <string name="Profile_email">Useremail</string>
+    <string name="Profile_firstName">First name</string>
+    <string name="Profile_lastName">Last name</string>
+    <string name="Profile_updatePassword">Update Password</string>
+    <string name="Profile_updateProfile">Update Profile</string>
+    <string name="Profile_password">Password</string>
+    <string name="Profile_confPassword">Conf. Password</string>
+    <string name="Profile_update">Update</string>
+
+    <!-- follow us -->
+    <string name="followus_followus">follow us</string>
+    <string name="followus_facebook">Facebook</string>
+    <string name="followus_twitter">Twitter</string>
+    <string name="followus_instagram">Instagram</string>
+    <string name="followus_pintrest">Pinterest</string>
+    <string name="followus_linkedin">Linked in</string>
+    <string name="followus_youtube">Youtube</string>
+    
+    <!-- Share this app -->
+    <string name="SharetheApp_shareappvia">Share App Via</string>
+    <string name="SharetheApp_shareappvia_whatsapp">Whats app</string>
+    
+    <!-- Contact us -->
+    <string name="Contactus_contactus">Contact Us</string>
+    <string name="Contactus_firstline">Office # 18, Khurais, Commercial Building</string>
+    <string name="Contactus_secondline">Khurais Road, Riyadh, KSA</string>
+    <string name="Contactus_telephone">966583992223</string>
+    <string name="Contactus_email">hello@littleflora.com; support@littleflora.com</string>
+    
+    <!-- Dialog Newsletter -->
+    <string name="Newsletter_newsletter">NEWSLETTER</string>
+    <string name="Newsletter_signupfornewsletter">Sign Up for Our Newsletter:</string>
+    <string name="Newsletter_go">Go</string>
+    
+    <!-- Customer Address List -->
+    <string name="CustomerAddressList_AddressList">Address List</string>
+    <string name="CustomerAddressList_noAddressFound">No Address Found</string>
+    <string name="CustomerAddressList_addressFound">Address Found</string>
+    <string name="CustomerAddressList_addNewAddress">Add a New Address</string>
+    <string name="CustomerAddressList_customerID">Customer Id</string>
+    <string name="CustomerAddressList_customerFirstName">First Name</string>
+    <string name="CustomerAddressList_customerLastName">Last Name</string>
+    <string name="CustomerAddressList_customerStreet1">Street 1</string>
+    <string name="CustomerAddressList_customerStreet2">Street 2</string>
+    <string name="CustomerAddressList_customerCity">City</string>
+    <string name="CustomerAddressList_customerEmail">Email</string>
+    <string name="CustomerAddressList_customerPostCode">PostCode</string>
+    <string name="CustomerAddressList_customerTelephone">Telephone</string>
+    
+    <!-- Customer Address Enter -->
+    <string name="CustomerAddress_customerAddress">Customer Address</string>
+    <string name="CustomerAddress_customerfirstName">First Name</string>
+    <string name="CustomerAddress_customerlastName">Last Name</string>
+    <string name="CustomerAddress_customerStreet1">Street 1</string>
+    <string name="CustomerAddress_customerStreet2">Street 2</string>
+    <string name="CustomerAddress_customerCity">City</string>
+    <string name="CustomerAddress_customerPostCode">Postcode</string>
+    <string name="CustomerAddress_customerTelephone">Telephone</string>
+    <string name="CustomerAddress_submitAddress">Submit Address</string>
+    <string name="CustomerAddress_invalidStreet1">Invalid Street_1 Address</string>
+    <string name="CustomerAddress_invalidStreet2">Invalid Street_2 Address</string>
+    <string name="CustomerAddress_invalidCity">Invalid City</string>
+    <string name="CustomerAddress_invalidpostcode">Invalid PostCode</string>
+    <string name="CustomerAddress_invalidtelephoneno">Invalid Phone no.</string>
+    
+    <!-- Dialog ByNow -->
+    <string name="DialogByNow_GuestUserDetails">Guest User Details</string>
+    <string name="DialogByNow_firstName">Firstname</string>
+    <string name="DialogByNow_lastName">Lastname</string>
+    <string name="DialogByNow_email">Email</string>
+    <string name="DialogByNow_continue">Continue</string>
+ 
+    <!-- Dialog Stored Address -->    
+    <string name="DialogStoredAddress_StoredAddreses">Stored Address</string>
+    <string name="DialogStoredAddress_UseAs">Use this address as</string>
+    <string name="DialogStoredAddress_UseAsShipping">Shipping Address</string>
+    <string name="DialogStoredAddress_UseAsBilling">Billing Address</string>
+    <string name="DialogStoredAddress_Continue">Continue</string>
+    <string name="DialogStoredAddress_AddNewBillingAddress">Add a new Billing Address</string>
+    <string name="DialogStoredAddress_AddNewShippingAddress">Add a new Shipping Address</string>
+    
+    <!-- Order Details Billing Address-->
+    <string name="BillingAddress_invalidFirstName">invalid First Name</string>
+    <string name="BillingAddress_FirstName">First Name</string>
+    <string name="BillingAddress_invalidLastName">invalid Last Name</string>
+    <string name="BillingAddress_LastName">Last Name</string>
+    <string name="BillingAddress_invalidStreet1">invalid Street 1</string>
+    <string name="BillingAddress_Street1">Street 1</string>
+    <string name="BillingAddress_invalidStreet2">invalid Street 2</string>
+    <string name="BillingAddress_Street2">Street 2</string>
+    <string name="BillingAddress_invalidCity">invalid City</string>
+    <string name="BillingAddress_City">City</string>    
+    <string name="BillingAddress_invalidPostCode">invalid Postcode</string>
+    <string name="BillingAddress_Postcode">Postcode</string>    
+    <string name="BillingAddress_invalidTelephone">invalid Telephone</string>
+    <string name="BillingAddress_Telephone">Telephone</string> 
+    <string name="BillingAddress_submitBillingAddress">Submit Billing Address</string> 
+    <string name="BillingAddress_submitShippingAddress">Submit Shipping Address</string> 
+    
+
+    <!-- Order Details Shipping Method-->
+    <string name="ShippingMethod_creditcard_bankpayment">Credit Card / Bank Payment</string>    
+    <string name="ShippingMethod_cashOnDelivery">Cash on Delivery</string>    
+    <string name="ShippingMethod_submitshippinginfo">Submit Shipping Info</string>    
+    
+    <!-- Order Details Payment Info-->
+    <string name="PaymentInfo_CreditCard_bankPayment">Credit Card / Bank Payment</string>    
+    <string name="PaymentInfo_cashOnDelivery">Cash on Delivery</string>    
+    <string name="PaymentInfo_creditcardpayment">Credit Card Payment</string>    
+    <string name="PaymentInfo_submitpaymentinfo">Submit Payment Info</string>    
+ 
+    <!-- Order Details Delivery Info-->    
+    <string name="DeliveryInfo_submitpaymentinfo">Submit Delivery Info</string>    
+    <string name="DeliveryInfo_message">Message</string>    
+    
+    <!-- Order Details Order Review-->    
+    <string name="OrderReview_billingAddress">Billing Address</string>    
+    <string name="OrderReview_shippingAddress">Shipping Address</string>    
+    <string name="OrderReview_shippingMethod">Shipping Method</string>    
+    <string name="OrderReview_PaymentInfo">Payment Info</string>    
+    <string name="OrderReview_DeliveryInfo">Delivery Info</string>    
+    <string name="OrderReview_details">Submit Details</string>    
+    
+    <!--  Fragment Account Inforamtion-->
+    <string name="Fragment_AccInfo_firstName">First Name</string>    
+    <string name="Fragment_AccInfo_lastName">Last Name</string>    
+    <string name="Fragment_AccInfo_email">Email</string>    
+    <string name="Fragment_AccInfo_gender">Gender</string>    
+    <string name="Fragment_AccInfo_dob">Date of Birth</string>    
+    <string name="Fragment_AccInfo_changePassword">Change Password</string>    
+    <string name="Fragment_AccInfo_currentPassword">Current Password</string>    
+    <string name="Fragment_AccInfo_newPassword">New Password</string>    
+    <string name="Fragment_AccInfo_confNewPassword">Confirm Password</string>   
+    <string name="Fragment_AccInfo_male">Male</string>   
+    <string name="Fragment_AccInfo_female">Female</string>   
+    <string name="Fragment_AccInfo_DD">DD</string>   
+    <string name="Fragment_AccInfo_MM">MM</string>   
+    <string name="Fragment_AccInfo_YYYY">YYYY</string>   
+    
+    <!-- Fragment Address Book -->
+    <string name="Fragment_addBook_DEFAULT_ADDRESSES">DEFAULT ADDRESSES</string>    
+    <string name="Fragment_addBook_Default_Billing_Address">Default Billing Address</string>    
+    <string name="Fragment_addBook_Default_Shipping_Address">Default Shipping Address</string>    
+    <string name="Fragment_addBook_Change_Billing_Address">Change Billing Address</string>    
+    <string name="Fragment_addBook_Change_ADDITIONAL_ADDRESS_ENTRIES">ADDITIONAL ADDRESS ENTRIES</string>    
+    <string name="Fragment_addBook_Change_Delete_Address">Delete Address</string>    
+    <string name="Fragment_addBook_Change_Edit_Address">Edit Address</string>    
+    <string name="Fragment_addBook_Change_Add_New_Address">Add New Address</string>    
+    <string name="Fragment_addBook_Change_Shippin_Address">Change Shipping Address</string>    
+    <string name="Fragment_addBook_usethisaddressAsShippingAddress">Use as Shipping Address</string>    
+    <string name="Fragment_addBook_usethisaddressAsBillingAddress">Use as Billing Address</string>    
+    
+	<!-- Fragment My Orders -->
+    <string name="Fragment_myOrders_ORDER">Order</string>    
+    <string name="Fragment_myOrders_DATE">DATE</string>    
+    <string name="Fragment_myOrders_SHIP_TO">SHIP TO</string>    
+	<string name="Fragment_myOrders_ORDER_TOTAL">ORDER TOTAL</string>    
+	<string name="Fragment_myOrders_ORDER_STATUS">ORDER STATUS</string>    
+	
+        
+    <!-- Arabic -->
+    <string name="NavigationDrawer_Home">المنزل</string>    
+    <string name="NavigationDrawer_Logout">تسجيل الخروج</string>    
+    
+    
+</resources>

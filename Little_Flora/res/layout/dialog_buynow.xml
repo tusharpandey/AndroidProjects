@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="top|bottom|left|right"
+    android:layout_margin="18dp"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/txt_Dialog_sortBy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/DialogByNow_GuestUserDetails"
+        android:textColor="@color/littleFlora_pink"
+        android:textSize="20sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_marginTop="10dp"
+        android:background="@color/Gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:weightSum="1" >
+
+        <EditText
+        android:id="@+id/edt_Dialog_firstName"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight=".5"
+            android:hint="@string/DialogByNow_firstName"
+            android:paddingLeft="5dp" />
+
+        <EditText
+        android:id="@+id/edt_Dialog_lastname"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight=".5"
+            android:hint="@string/DialogByNow_lastName"
+            android:paddingLeft="5dp" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edt_Dialog_email"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:inputType="textEmailAddress"
+        android:hint="@string/DialogByNow_email"
+        android:paddingLeft="5dp" />
+
+    <Button
+        android:id="@+id/btn_Dialog_continue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal|center_vertical"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/background_pinkbutton"
+        android:text="@string/DialogByNow_continue"
+        android:textColor="@color/selector_fortextview_white"
+        android:textSize="20sp" />
+
+</LinearLayout>

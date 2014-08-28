@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="top|bottom|left|right|center_vertical"
+    android:orientation="vertical" >
+
+<!--     <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:singleLine="true"
+        android:text="sadfkhsdjkf kfh hfkjdhs ksdhfkj hdskjfh kjhdfkjhsdkfjh jksdfh khsdfkjh jkdsfh kjsdhf hkfhks dhfksdhfkjdshf"
+        android:visibility="invisible" />
+ -->
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent" />
+
+    <com.viewpagerindicator.CirclePageIndicator
+        android:id="@+id/indicator"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:padding="10dip" />
+
+<!--     <FrameLayout
+        android:layout_width="1dp"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="sadfkhsdjkf kfh hfkjdhs ksdhfkj hdskjfh kjhdfkjhsdkfjh jksdfh khsdfkjh jkdsfh kjsdhf hkfhks dhfksdhfkjdshf kh kj hkjhkjhkjh  kjh kj hkj  kjh kj hkj h h h kjh kjh kj hk h kh k hk hk h kh k hk hk h kh kh k hk h kh "
+            android:visibility="invisible" />
+    </FrameLayout>
+ -->
+</FrameLayout>

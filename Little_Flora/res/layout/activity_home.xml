@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/littleFlora_appBackground"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="18dp"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="center_horizontal"
+            android:src="@drawable/lf_logo_high_r" />
+
+        <TextView
+            android:id="@+id/txt_browserProduct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="38dp"
+            android:background="@drawable/home_menubackground"
+            android:gravity="center_horizontal|center_vertical"
+            android:padding="10dp"
+            android:text="@string/home_browseProducts"
+            android:textStyle="bold"
+            android:textColor="@color/selector_fortextview_pink"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txt_cart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/home_menubackground"
+            android:gravity="center_horizontal|center_vertical"
+            android:padding="10dp"
+            android:text="@string/home_cart"
+            android:textStyle="bold"
+            android:textColor="@color/selector_fortextview_pink"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txt_checkOut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/home_menubackground"
+            android:gravity="center_horizontal|center_vertical"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:text="@string/home_checkout"
+            android:textColor="@color/selector_fortextview_pink"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</LinearLayout>

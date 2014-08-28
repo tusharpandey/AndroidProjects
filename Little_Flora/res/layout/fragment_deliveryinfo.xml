@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <DatePicker
+                android:id="@+id/dpResult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:spinnersShown="false" />
+
+            <EditText
+                android:id="@+id/edt_message"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/background_edittext"
+                android:gravity="top|left"
+                android:hint="@string/DeliveryInfo_message"
+                android:inputType="textMultiLine"
+                android:lines="8"
+                android:maxLines="10"
+                android:minLines="6"
+                android:padding="5dp"
+                android:scrollbars="vertical"
+                android:textColor="@color/littleFlora_pink" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="18dp"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <Button
+                    android:id="@+id/btn_back"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight=".2"
+                    android:background="@drawable/background_pinkbutton"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="back"
+                    android:textColor="@color/selector_fortextview_white"
+                    android:textSize="18sp" />
+
+                <View
+                    android:layout_width="15dp"
+                    android:layout_height="30dp" />
+
+                <Button
+                    android:id="@+id/btn_addNewAddress"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight=".8"
+                    android:background="@drawable/background_pinkbutton"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="@string/DeliveryInfo_submitpaymentinfo"
+                    android:textColor="@color/selector_fortextview_white"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

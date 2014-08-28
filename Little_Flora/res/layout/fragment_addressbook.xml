@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="20dp"
+        android:layout_weight=".15"
+        android:gravity="center_vertical"
+        android:minHeight="50dp"
+        android:orientation="horizontal"
+        android:weightSum="1" >
+
+        <ImageView
+            android:id="@+id/img_defaultshippingAddress"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".25"
+            android:src="@drawable/shipping_address" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="30dp"
+            android:background="@color/Gray" />
+
+        <ImageView
+            android:id="@+id/img_defaultBillingAddress"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".25"
+            android:src="@drawable/billing_address" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="30dp"
+            android:background="@color/Gray" />
+
+        <ImageView
+            android:id="@+id/img_addNewAddress"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".25"
+            android:src="@drawable/add_new_address" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="30dp"
+            android:background="@color/Gray" />
+
+        <ImageView
+            android:id="@+id/img_additionalEntries"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".25"
+            android:src="@drawable/additionl_entries" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_marginBottom="20dp"
+        android:background="@color/Gray" />
+
+    <LinearLayout
+        android:id="@+id/lay_shippingAddress"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".85"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/txt_defaultShippingHeading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Default Shipping"
+            android:textColor="@color/littleFlora_pink"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txt_defaultShippingHeading_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Default Shipping Text"
+            android:textColor="@color/littleFlora_pink"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/txt_changeDefaultShippingHeading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Change Default Shipping"
+            android:textColor="@color/selector_fortextview_pink"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lay_billingAddress"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".85"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/txt_defaultBillingHeading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Default Billing"
+            android:textColor="@color/littleFlora_pink"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txt_defaultBillingHeading_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Default Billing Text"
+            android:textColor="@color/littleFlora_pink"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/txt_changeDefaultBillingHeading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Change Default Billing"
+            android:textColor="@color/selector_fortextview_pink"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lay_addNewAddress"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".85"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="10dp" >
+
+                <EditText
+                    android:id="@+id/edt_firstName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:background="@drawable/background_edittext"
+                    android:hint="@string/CustomerAddress_customerfirstName"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:nextFocusDown="@+id/edt_lastName"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp"
+                    android:textColor="@color/littleFlora_pink" />
+
+                <EditText
+                    android:id="@+id/edt_lastName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:background="@drawable/background_edittext"
+                    android:hint="@string/CustomerAddress_customerlastName"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:nextFocusDown="@+id/edt_street1"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp"
+                    android:textColor="@color/littleFlora_pink" />
+
+                <EditText
+                    android:id="@+id/edt_street1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:background="@drawable/background_edittext"
+                    android:hint="@string/CustomerAddress_customerStreet1"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:nextFocusDown="@+id/edt_street2"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp"
+                    android:textColor="@color/littleFlora_pink" />
+
+                <EditText
+                    android:id="@+id/edt_street2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:background="@drawable/background_edittext"
+                    android:hint="@string/CustomerAddress_customerStreet2"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:nextFocusDown="@+id/edt_city"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp"
+                    android:textColor="@color/littleFlora_pink" />
+
+                <EditText
+                    android:id="@+id/edt_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:background="@drawable/background_edittext"
+                    android:hint="@string/CustomerAddress_customerCity"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:nextFocusDown="@+id/edt_postcode"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp"
+                    android:textColor="@color/littleFlora_pink" />
+
+                <EditText
+                    android:id="@+id/edt_postcode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:background="@drawable/background_edittext"
+                    android:hint="@string/CustomerAddress_customerPostCode"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPostalAddress"
+                    android:nextFocusDown="@+id/edt_telephone"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp"
+                    android:textColor="@color/littleFlora_pink" />
+
+                <EditText
+                    android:id="@+id/edt_telephone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:background="@drawable/background_edittext"
+                    android:hint="@string/CustomerAddress_customerTelephone"
+                    android:imeOptions="actionNext"
+                    android:inputType="phone"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp"
+                    android:textColor="@color/littleFlora_pink" />
+                
+                <CheckBox
+                    android:id="@+id/chk_useAsBillingAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:text="@string/Fragment_addBook_usethisaddressAsShippingAddress"
+                    android:textColor="@color/littleFlora_pink" />
+                
+                <CheckBox
+                    android:id="@+id/chk_useAsShippingAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:text="@string/Fragment_addBook_usethisaddressAsBillingAddress"
+                    android:textColor="@color/littleFlora_pink" />
+                
+                <Button
+                    android:id="@+id/btn_addNewAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginRight="35dp"
+                    android:layout_marginTop="18dp"
+                    android:background="@drawable/background_pinkbutton"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="Submit Address"
+                    android:textColor="@color/selector_fortextview_white"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lay_allEntries"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_weight=".85"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ListView
+            android:id="@+id/lst_addressList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:listSelector="@android:color/transparent" 
+            android:minHeight="300dp" >
+        </ListView>
+    </LinearLayout>
+
+</LinearLayout>

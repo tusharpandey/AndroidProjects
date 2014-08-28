@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:minHeight="60dp"
+    android:weightSum="1" >
+
+    <TextView
+        android:id="@+id/txt_addressText"
+	    android:minHeight="60dp"
+        android:layout_width="0dp"
+        android:layout_gravity="center_vertical"
+        android:layout_height="wrap_content"
+        android:layout_weight=".7"
+        android:textColor="@color/littleFlora_pink"
+        android:textSize="20sp"
+         />
+
+    <ImageView
+        android:id="@+id/img_editAddress"
+        android:layout_gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:maxHeight="60dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".15"
+        android:src="@drawable/editaddres" />
+
+    <View 
+        android:layout_width="1px"
+        android:layout_height="40dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_gravity="center_vertical"
+        android:background="@color/Gray"	        
+        />
+    
+    <ImageView
+        android:maxHeight="60dp"
+        android:id="@+id/img_deleteAddress"
+        android:layout_gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight=".15"
+        android:src="@drawable/deleteaddress" />
+
+</LinearLayout>

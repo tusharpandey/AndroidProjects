@@ -1,0 +1,109 @@
+
+<!-- A DrawerLayout is intended to be used as the top-level content view using match_parent for both width and height to consume the full space available. -->
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <android.support.v4.widget.SlidingPaneLayout
+            android:id="@+id/sp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <!-- Left side pane. (Master) -->
+
+            <FrameLayout
+                android:id="@+id/leftpane"
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:layout_weight="1"
+                android:background="#707070" >
+
+                <ListView
+                    android:id="@+id/lst_myAccountSection"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:listSelector="@color/Transparent" >
+                </ListView>
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/rightpane"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                >
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+
+                        <LinearLayout
+                            android:id="@+id/lay_linearlayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="20dp"
+                            android:layout_marginTop="20dp"
+                            android:orientation="vertical"
+                            android:padding="10dp"
+                            android:paddingLeft="30dp"
+                            android:paddingRight="30dp" >
+
+                            <TextView
+                                android:id="@+id/txt_accountTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:text="Account Dashboard"
+                                android:textColor="@color/littleFlora_pink"
+                                android:textSize="25sp" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="2px"
+                                android:layout_marginTop="10dp"
+                                android:background="@color/Gray" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/container"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/lay_linearlayout"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp" />
+                    </RelativeLayout>
+                </ScrollView>
+
+                <ImageView
+                    android:id="@+id/img_arrowSlider"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="150dp"
+                    android:src="@drawable/arrow_slider" />
+            </FrameLayout>
+        </android.support.v4.widget.SlidingPaneLayout>
+    </FrameLayout>
+
+    <ListView
+        android:id="@+id/left_drawer"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/littleFlora_pink"
+        android:choiceMode="singleChoice"
+        android:divider="@color/Gray"
+        android:dividerHeight="1px" />
+
+</android.support.v4.widget.DrawerLayout>

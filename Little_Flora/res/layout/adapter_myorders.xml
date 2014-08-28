@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:orientation="horizontal"
+    android:weightSum="1" >
+
+    <TextView
+        android:id="@+id/txt_orderID"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight=".30"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:textColor="@color/littleFlora_pink"
+        android:textSize="20sp"
+        android:text="tushar" />
+
+    <View
+        android:layout_width="1px"
+        android:layout_height="60dp"
+        android:background="@color/Gray" />
+
+    <TextView
+        android:id="@+id/txt_orderDate"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight=".30"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:textColor="@color/littleFlora_pink"
+        android:textSize="20sp"
+        android:text="tushar" />
+
+    <View
+        android:layout_width="1px"
+        android:layout_height="60dp"
+        android:background="@color/Gray" />
+
+    <TextView
+        android:id="@+id/txt_orderShipTo"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight=".30"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:textColor="@color/littleFlora_pink"
+        android:textSize="20sp"
+        android:text="tushar" />
+
+    <View
+        android:layout_width="1px"
+        android:layout_height="60dp"
+        android:background="@color/Gray" />
+
+    <ImageView
+        android:id="@+id/img_orderMore"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".10"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:src="@drawable/overflow_black" />
+
+</LinearLayout>

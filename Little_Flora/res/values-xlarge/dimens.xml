@@ -1,0 +1,18 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    
+	<dimen name="productlisting_productNameTextSize">21sp</dimen>
+    <dimen name="productlisting_productPriceTextSize">16sp</dimen>
+
+        <!-- Overflow icon size -->
+    <dimen name="overflow_textSize">20sp</dimen>
+    
+    <!-- Login button -->
+    <dimen name="loginpage_marginTop">50dp</dimen>
+    <dimen name="loginpage_linespace">18dp</dimen>
+    
+    
+</resources>

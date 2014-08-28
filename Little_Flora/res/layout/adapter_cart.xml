@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:background="@color/White"
+    android:weightSum="1" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#EEEEEE"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight=".2" >
+
+            <ImageView
+                android:id="@+id/img_itemImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginLeft="5dp"
+                android:maxHeight="80dp"
+                android:src="@drawable/placeholder" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight=".5"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+            <TextView
+                android:id="@+id/txt_itemName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="itemName"
+                android:textColor="@color/littleFlora_pink"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/txt_itemPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="SR 10"
+                android:textColor="@color/littleFlora_pink"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:background="@color/Gray" />
+
+        <TextView
+            android:id="@+id/txt_quantitiy"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".15"
+            android:drawableBottom="@drawable/down"
+            android:drawableTop="@drawable/up"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="1"
+            android:textColor="@color/selector_fortextview_pink"
+            android:textSize="20sp" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:background="@color/Gray" />
+
+        <ImageView
+            android:id="@+id/img_remove"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_weight=".15"
+            android:src="@drawable/delete_item2" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:layout_gravity="top|bottom|left|right"
+    android:layout_margin="18dp"
+    android:orientation="horizontal" 
+    android:weightSum="1">
+    
+	<TextView
+	    android:layout_weight=".33"
+	    android:id="@+id/txt_myorder_more_ordermoney"
+	    android:layout_width="0dp"
+	    android:layout_height="wrap_content"
+	    android:gravity="center_horizontal|center_vertical"
+	    android:layout_gravity="center_horizontal|center_vertical"
+	    android:textColor="@color/selector_fortextview_gray"
+	    android:textSize="20sp"
+	    android:text="View Order"
+	    android:paddingRight="18dp"
+	    />
+	
+	<View
+	    android:layout_width="1px"
+	    android:layout_height="40dp"
+	    android:layout_marginTop="10dp"
+	    android:background="@color/Gray"
+	    android:gravity="center_horizontal"
+	    />
+	
+	<TextView
+	    android:paddingLeft="18dp"
+	    android:paddingRight="18dp"
+	    android:layout_gravity="center_horizontal|center_vertical"
+	    android:layout_weight=".33"
+	    android:id="@+id/txt_myorder_more_status"
+	    android:layout_width="0dp"
+	    android:layout_height="wrap_content"
+	    android:textColor="@color/selector_fortextview_gray"
+	    android:textSize="20sp"
+	    android:text="View Order"
+	    android:gravity="center_horizontal|center_vertical"
+	    />
+	
+	<View
+	    android:layout_width="1px"
+	    android:layout_height="40dp"
+	    android:layout_marginTop="10dp"
+	    android:background="@color/Gray"
+	    android:gravity="center_horizontal"
+	    />
+	
+	<TextView
+	    android:paddingLeft="18dp"
+	    android:layout_weight=".33"
+	    android:id="@+id/txt_myorder_more_vieworder"
+	    android:layout_width="0dp"
+	    android:layout_gravity="center_horizontal|center_vertical"
+	    android:layout_height="wrap_content"
+	    android:textColor="@color/selector_fortextview_gray"
+	    android:textSize="20sp"
+	    android:text="View Order"
+	    android:gravity="center_horizontal|center_vertical"
+	    />
+	
+
+</LinearLayout>
